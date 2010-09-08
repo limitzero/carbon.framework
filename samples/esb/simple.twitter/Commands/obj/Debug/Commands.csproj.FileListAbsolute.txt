@@ -1,0 +1,10 @@
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\bin\Debug\Commands.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\bin\Debug\Commands.pdb
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\bin\Debug\Carbon.Core.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\bin\Debug\Castle.Core.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\bin\Debug\log4net.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\bin\Debug\Castle.MicroKernel.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\bin\Debug\Carbon.Core.pdb
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\obj\Debug\Commands.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Commands\obj\Debug\Commands.pdb

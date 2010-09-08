@@ -1,0 +1,13 @@
+2010-08-26 15:15:04,688 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-08-26 15:15:04,876 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.BytesToStringPipelineComponent' loaded.
+2010-08-26 15:15:04,891 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.SerializeMessagePipelineComponent' loaded.
+2010-08-26 15:15:04,891 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.NonIdempotentPipelineComponent' loaded.
+2010-08-26 15:15:04,891 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.DeserializeMessagePipelineComponent' loaded.
+2010-08-26 15:15:04,907 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.StringToBytesPipelineComponent' loaded.
+2010-08-26 15:15:04,907 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.FlowThroughPipelineComponent' loaded.
+2010-08-26 15:15:04,938 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Receive.DeserializeMessagePipeline' loaded.
+2010-08-26 15:15:04,938 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Send.SerializeMessagePipeline' loaded.
+2010-08-26 15:15:05,126 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Surface 'Starbucks' loaded.
+2010-08-26 15:15:05,126 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Context started.
+2010-08-26 15:15:05,407 [2] INFO  carbon [(null)] <(null)> - Scheduler stopped.
+2010-08-26 15:15:05,407 [2] INFO  carbon [(null)] <(null)> - Context stopped.

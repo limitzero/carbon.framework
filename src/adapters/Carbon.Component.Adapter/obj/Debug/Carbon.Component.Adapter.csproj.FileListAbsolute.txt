@@ -1,0 +1,10 @@
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\bin\Debug\Carbon.Component.Adapter.dll
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\bin\Debug\Carbon.Component.Adapter.pdb
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\bin\Debug\Carbon.Core.dll
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\bin\Debug\Castle.Core.dll
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\bin\Debug\Castle.MicroKernel.dll
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\bin\Debug\log4net.dll
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\bin\Debug\Carbon.Core.pdb
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\obj\Debug\Carbon.Component.Adapter.dll
+C:\Work\repositories\Carbon.Framework\src\adapters\Carbon.Component.Adapter\obj\Debug\Carbon.Component.Adapter.pdb

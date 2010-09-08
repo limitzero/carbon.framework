@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D4AAD3D-5433-4EE3-B32D-FC95DE85942F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Carbon.ESB</RootNamespace>
+    <AssemblyName>Carbon.ESB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=1.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\AbstractBootStrapper.cs" />
+    <Compile Include="Configuration\CarbonESBFacility.cs" />
+    <Compile Include="Configuration\EndpointBuilder.cs" />
+    <Compile Include="Configuration\MessageEndpointElementConfiguration.cs" />
+    <Compile Include="Configuration\MessageBusElementConfiguration.cs" />
+    <Compile Include="Configuration\MessagesElementConfiguration.cs" />
+    <Compile Include="MessageBusMessagePublishedEventArgs.cs" />
+    <Compile Include="Messages\CancelTimeOutMessage.cs" />
+    <Compile Include="Messages\ExpiredTimeoutMessage.cs" />
+    <Compile Include="Messages\ISagaThread.cs" />
+    <Compile Include="Messages\TimeOutMessage.cs" />
+    <Compile Include="IMessageBus.cs" />
+    <Compile Include="Internals\EndpointScanner.cs" />
+    <Compile Include="Internals\IComponentScanner.cs" />
+    <Compile Include="Internals\IEndpointScanner.cs" />
+    <Compile Include="MessageBus.cs" />
+    <Compile Include="MessageBusErrorEventArgs.cs" />
+    <Compile Include="MessageBusMessageDeliveredEventArgs.cs" />
+    <Compile Include="MessageBusMessageReceivedEventArgs.cs" />
+    <Compile Include="Pipeline\IMessageBusMessagingPipeline.cs" />
+    <Compile Include="Pipeline\MessageBusMessagingPipeline.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registries\Endpoints\ServiceBusEndpointRegistry.cs" />
+    <Compile Include="Registries\Endpoints\IServiceBusEndpointRegistry.cs" />
+    <Compile Include="Saga\Finder\ISagaFinder.cs" />
+    <Compile Include="Saga\ISagaMessage.cs" />
+    <Compile Include="Saga\ISaga.cs" />
+    <Compile Include="Messages\SagaThread.cs" />
+    <Compile Include="Saga\Persister\ISagaPersister.cs" />
+    <Compile Include="Saga\Persister\InMemorySagaPersister.cs" />
+    <Compile Include="Saga\Saga.cs" />
+    <Compile Include="Services\ContextBackgroundService.cs" />
+    <Compile Include="Services\IContextBackgroundService.cs" />
+    <Compile Include="Services\IMessageBusService.cs" />
+    <Compile Include="Services\Impl\Timeout\Configuration\TimeoutServiceBootstrapper.cs" />
+    <Compile Include="Services\Impl\Timeout\Persister\InMemoryTimeoutsPersister.cs" />
+    <Compile Include="Services\Impl\Timeout\Persister\ITimeoutsPersister.cs" />
+    <Compile Include="Services\IServiceConfigurationStrategy.cs" />
+    <Compile Include="Stereotypes\Saga\Impl\SagaMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Saga\InitiatedByAttribute.cs" />
+    <Compile Include="Stereotypes\Saga\OrchestratedByAttribute.cs" />
+    <Compile Include="Stereotypes\IServiceBusMessageHandlingStrategy.cs" />
+    <Compile Include="Subscriptions\Configuration\SubscriptionRegistryConfiguration.cs" />
+    <Compile Include="Services\Impl\Timeout\Configuration\TimeoutServiceConfigurationStrategy.cs" />
+    <Compile Include="Services\Impl\Timeout\ITimeoutBackgroundService.cs" />
+    <Compile Include="Services\Impl\Timeout\ITimeoutConsumer.cs" />
+    <Compile Include="Services\Impl\Timeout\TimeoutBackgroundService.cs" />
+    <Compile Include="Services\Impl\Timeout\TimeoutConsumer.cs" />
+    <Compile Include="Services\Registry\BackgroundServiceRegistry.cs" />
+    <Compile Include="Services\Registry\IBackgroundServiceRegistry.cs" />
+    <Compile Include="Services\Registry\IServiceDescription.cs" />
+    <Compile Include="Services\Registry\ServiceDescription.cs" />
+    <Compile Include="Subscriptions\Persister\InMemorySubscriptionPersister.cs" />
+    <Compile Include="Subscriptions\Persister\ISubscriptionPersister.cs" />
+    <Compile Include="Testing\BaseMessageBusConsumerTestFixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Carbon.Core\Carbon.Core.csproj">
+      <Project>{BDD71A59-4A78-4B1C-9A77-3AC9D843F378}</Project>
+      <Name>Carbon.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\integration\Carbon.Windsor.Container.Integration\Carbon.Windsor.Container.Integration.csproj">
+      <Project>{213C5255-F7E8-4BB6-8900-3C86ACC010A9}</Project>
+      <Name>Carbon.Windsor.Container.Integration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Messages\Mappings\SagaThread.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+    <Folder Include="Services\Impl\Health\Configuration\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

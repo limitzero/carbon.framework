@@ -1,0 +1,30 @@
+2010-09-02 14:17:58,446 [Worker.10] ERROR carbon [(null)] <(null)> - System.ArgumentException: The message type 'System.Byte[]' could not be matched to any method for invocation on component 'Carbon.ESB.MessageBus'.
+   at Carbon.Core.Internals.MessageResolution.MapMessageToMethod.Map(Object customComponent, Object message) in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Internals\MessageResolution\MapMessageToMethod.cs:line 106
+   at Carbon.Core.Internals.MessageResolution.MapMessageToMethod.Map(Object customComponent, IEnvelope message) in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Internals\MessageResolution\MapMessageToMethod.cs:line 29
+   at Carbon.Core.Stereotypes.For.Components.MessageEndpoint.Impl.MessageEndpointActivator.InvokeEndpoint(IEnvelope message) in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Stereotypes\For\Components\MessageEndpoint\Impl\MessageEndpointActivator.cs:line 209
+2010-09-02 14:45:45,579 [Worker.7] ERROR carbon [(null)] <(null)> - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Monitor.ReliableEnter(Object obj, Boolean& tookLock)
+   at System.Reflection.CerHashtable`2.get_Item(K key)
+   at System.RuntimeType.RuntimeTypeCache.MemberInfoCache`1.GetMemberList(MemberListType listType, String name, CacheType cacheType)
+   at System.RuntimeType.RuntimeTypeCache.GetMemberList[T](MemberInfoCache`1& m_cache, MemberListType listType, String name, CacheType cacheType)
+   at System.RuntimeType.GetMethodCandidates(String name, BindingFlags bindingAttr, CallingConventions callConv, Type[] types, Boolean allowPrefixLookup)
+   at System.RuntimeType.GetMethodImpl(String name, BindingFlags bindingAttr, Binder binder, CallingConventions callConv, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetMethod(String name)
+   at Carbon.Core.Internals.MessageResolution.MapMessageToMethod.Map(Object customComponent, Object message) in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Internals\MessageResolution\MapMessageToMethod.cs:line 40
+   at Carbon.Core.Internals.MessageResolution.MapMessageToMethod.Map(Object customComponent, IEnvelope message) in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Internals\MessageResolution\MapMessageToMethod.cs:line 29
+   at Carbon.Core.Stereotypes.For.Components.MessageEndpoint.Impl.MessageEndpointActivator.InvokeEndpoint(IEnvelope message) in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Stereotypes\For\Components\MessageEndpoint\Impl\MessageEndpointActivator.cs:line 209
+2010-09-02 14:50:12,122 [Worker.9] ERROR carbon [(null)] <(null)> -  System.Transactions.TransactionAbortedException: The transaction has aborted. ---> System.TimeoutException: Transaction Timeout
+   --- End of inner exception stack trace ---
+   at System.Transactions.TransactionStateAborted.BeginCommit(InternalTransaction tx, Boolean asyncCommit, AsyncCallback asyncCallback, Object asyncState)
+   at System.Transactions.CommittableTransaction.Commit()
+   at System.Transactions.TransactionScope.InternalDispose()
+   at System.Transactions.TransactionScope.Dispose()
+   at Carbon.Core.Adapter.AbstractInputChannelAdapter.Receive() in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Adapter\AbstractInputChannelAdapter.cs:line 297
+   at Carbon.Core.Adapter.AbstractInputChannelAdapter.PerformAction() in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Adapter\AbstractInputChannelAdapter.cs:line 184
+   at Carbon.Core.RuntimeServices.AbstractBackgroundService.Execute() in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\RuntimeServices\AbstractBackgroundService.cs:line 139
+2010-09-02 14:52:45,831 [Worker.10] ERROR carbon [(null)] <(null)> - System.Threading.ThreadAbortException: Thread was being aborted.
+   at Carbon.Core.Stereotypes.For.Components.MessageEndpoint.Impl.MessageEndpointActivatorBeginInvokeEventArgs.get_Envelope()
+   at Carbon.ESB.Testing.BaseMessageBusConsumerTestFixture.ComponentBeginInvoke(Object sender, MessageEndpointActivatorBeginInvokeEventArgs eventArgs) in C:\Work\repositories\Carbon.Framework\src\esb\Carbon.ESB\Testing\BaseMessageBusConsumerTestFixture.cs:line 439
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at Carbon.Core.Stereotypes.For.Components.MessageEndpoint.Impl.MessageEndpointActivator.OnBeginInvoke(IEnvelope message) in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Stereotypes\For\Components\MessageEndpoint\Impl\MessageEndpointActivator.cs:line 420
+   at Carbon.Core.Stereotypes.For.Components.MessageEndpoint.Impl.MessageEndpointActivator.InvokeEndpoint(IEnvelope message) in C:\Work\repositories\Carbon.Framework\src\core\Carbon.Core\Stereotypes\For\Components\MessageEndpoint\Impl\MessageEndpointActivator.cs:line 219

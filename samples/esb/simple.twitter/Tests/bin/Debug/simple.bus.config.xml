@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <facilities>
+
+    <facility id="carbon.esb">
+
+      <!-- configure the subscription and conversation registry to use the in-memory implementation -->
+      <subscription-registry type=""/>
+      <conversation-registry type=""/>
+
+      <message-bus
+        annotation-driven="true"
+        local-channel="kharbon-bus"
+        local-address = "msmq://localhost/private$/carbon_bus"
+        subcription-address = "msmq://localhost/private$/carbon.subscriptions"
+        concurrency="2"
+        frequency="1"/>
+
+      <!-- map our commands and event messages to endpoints -->
+      <messages>
+        <add name="Commands"
+                    uri="msmq://localhost/private$/cqrs.commands"/>
+        <add name="Events"
+                    uri="msmq://localhost/private$/cqrs.events"/>
+      </messages>
+
+
+    </facility>
+
+  </facilities>
+
+  <components>
+
+  </components>
+
+</configuration>

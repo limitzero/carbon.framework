@@ -1,0 +1,71 @@
+2010-08-26 08:26:29,433 [8] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-08-26 08:26:30,073 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.BytesToStringPipelineComponent' loaded.
+2010-08-26 08:26:30,073 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.SerializeMessagePipelineComponent' loaded.
+2010-08-26 08:26:30,089 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.NonIdempotentPipelineComponent' loaded.
+2010-08-26 08:26:30,089 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.DeserializeMessagePipelineComponent' loaded.
+2010-08-26 08:26:30,104 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.StringToBytesPipelineComponent' loaded.
+2010-08-26 08:26:30,120 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.FlowThroughPipelineComponent' loaded.
+2010-08-26 08:26:30,135 [8] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Receive.DeserializeMessagePipeline' loaded.
+2010-08-26 08:26:30,151 [8] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Send.SerializeMessagePipeline' loaded.
+2010-08-26 08:26:57,814 [8] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-08-26 08:26:58,064 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.BytesToStringPipelineComponent' loaded.
+2010-08-26 08:26:58,080 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.SerializeMessagePipelineComponent' loaded.
+2010-08-26 08:26:58,080 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.NonIdempotentPipelineComponent' loaded.
+2010-08-26 08:26:58,096 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.DeserializeMessagePipelineComponent' loaded.
+2010-08-26 08:26:58,096 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.StringToBytesPipelineComponent' loaded.
+2010-08-26 08:26:58,111 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.FlowThroughPipelineComponent' loaded.
+2010-08-26 08:26:58,143 [8] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Receive.DeserializeMessagePipeline' loaded.
+2010-08-26 08:26:58,143 [8] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Send.SerializeMessagePipeline' loaded.
+2010-08-26 08:27:02,376 [8] DEBUG carbon [(null)] <(null)> - Surface 'Credit Bureau Component Surface' loaded.
+2010-08-26 08:27:02,376 [8] DEBUG carbon [(null)] <(null)> - Surface 'Banking Gateway Component Surface' loaded.
+2010-08-26 08:27:02,391 [8] DEBUG carbon [(null)] <(null)> - Surface 'Loan Broker Component Surface' loaded.
+2010-08-26 08:27:02,391 [8] INFO  carbon [(null)] <(null)> - Context started.
+2010-08-26 08:27:03,203 [8] INFO  carbon [(null)] <(null)> - Scheduler started.
+2010-08-26 08:27:46,128 [8] INFO  carbon [(null)] <(null)> - Scheduler stopped.
+2010-08-26 08:27:46,128 [8] INFO  carbon [(null)] <(null)> - Context stopped.
+2010-08-26 08:27:46,143 [8] INFO  carbon [(null)] <(null)> - Scheduler stopped.
+2010-08-26 08:27:46,143 [8] INFO  carbon [(null)] <(null)> - Context stopped.
+2010-08-26 08:27:54,188 [8] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-08-26 08:27:54,469 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.BytesToStringPipelineComponent' loaded.
+2010-08-26 08:27:54,485 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.SerializeMessagePipelineComponent' loaded.
+2010-08-26 08:27:54,485 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.NonIdempotentPipelineComponent' loaded.
+2010-08-26 08:27:54,500 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.DeserializeMessagePipelineComponent' loaded.
+2010-08-26 08:27:54,500 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.StringToBytesPipelineComponent' loaded.
+2010-08-26 08:27:54,516 [8] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.FlowThroughPipelineComponent' loaded.
+2010-08-26 08:27:54,547 [8] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Receive.DeserializeMessagePipeline' loaded.
+2010-08-26 08:27:54,547 [8] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Send.SerializeMessagePipeline' loaded.
+2010-08-26 08:27:55,578 [8] DEBUG carbon [(null)] <(null)> - Surface 'Credit Bureau Component Surface' loaded.
+2010-08-26 08:27:55,578 [8] DEBUG carbon [(null)] <(null)> - Surface 'Banking Gateway Component Surface' loaded.
+2010-08-26 08:27:55,594 [8] DEBUG carbon [(null)] <(null)> - Surface 'Loan Broker Component Surface' loaded.
+2010-08-26 08:27:55,594 [8] INFO  carbon [(null)] <(null)> - Context started.
+2010-08-26 08:27:55,890 [8] INFO  carbon [(null)] <(null)> - Scheduler started.
+2010-08-26 08:28:21,632 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.LoanAcceptance.Components.LoanQuoteMessageConsumer' for method 'Consume' with input message 'LoanBroker.Messages.LoanQuoteQuery'.
+2010-08-26 08:28:21,648 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Surfaces.LoanAcceptance.Components.LoanQuoteMessageConsumer' for method 'Consume' with output message 'LoanBroker.Messages.CreditBureauInquiry'.
+2010-08-26 08:28:21,648 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.CreditBureau.Components.CreditBureauMessageConsumer' for method 'Consume' with input message 'LoanBroker.Messages.CreditBureauInquiry'.
+2010-08-26 08:28:21,664 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Surfaces.CreditBureau.Components.CreditBureauMessageConsumer' for method 'Consume' with output message 'LoanBroker.Messages.CreditBureauReply'.
+2010-08-26 08:28:21,679 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankConnectionManager' for method 'Consume' with input message 'LoanBroker.Messages.CreditBureauReply'.
+2010-08-26 08:28:21,695 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Banks.Bank1' for method 'Consume' with input message 'LoanBroker.Messages.CreateBankQuoteMessage'.
+2010-08-26 08:28:21,695 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAccumulator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:21,726 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Banks.Bank1' for method 'Consume' with output message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:21,742 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAccumulator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:21,757 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Banks.Bank2' for method 'Consume' with input message 'LoanBroker.Messages.CreateBankQuoteMessage'.
+2010-08-26 08:28:21,757 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAccumulator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:21,773 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Banks.Bank2' for method 'Consume' with output message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:21,773 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAccumulator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:21,789 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAggregator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage[]'.
+2010-08-26 08:28:27,365 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteConfirmationToLoanQuoteConfirmationTranslator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteConfirmation'.
+2010-08-26 08:28:27,381 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteConfirmationToLoanQuoteConfirmationTranslator' for method 'Consume' with output message 'LoanBroker.Messages.LoanQuoteConfirmation'.
+2010-08-26 08:28:27,381 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAggregator' for method 'Consume' with output message 'LoanBroker.Messages.BankQuoteConfirmation'.
+2010-08-26 08:28:27,396 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteConfirmationToLoanQuoteConfirmationTranslator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteConfirmation'.
+2010-08-26 08:28:27,412 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteConfirmationToLoanQuoteConfirmationTranslator' for method 'Consume' with output message 'LoanBroker.Messages.LoanQuoteConfirmation'.
+2010-08-26 08:28:27,428 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Banks.Bank3' for method 'Consume' with input message 'LoanBroker.Messages.CreateBankQuoteMessage'.
+2010-08-26 08:28:27,428 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAccumulator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:27,443 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Banks.Bank3' for method 'Consume' with output message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:27,443 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAccumulator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:27,459 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Banks.Bank4' for method 'Consume' with input message 'LoanBroker.Messages.CreateBankQuoteMessage'.
+2010-08-26 08:28:27,474 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAccumulator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:27,474 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Banks.Bank4' for method 'Consume' with output message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:27,490 [8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankQuoteMessageAccumulator' for method 'Consume' with input message 'LoanBroker.Messages.BankQuoteCreatedMessage'.
+2010-08-26 08:28:27,506 [8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'LoanBroker.Surfaces.BankingGateway.Components.BankConnectionManager' for method 'Consume' with output message '<Null>'.
+2010-08-26 08:28:32,504 [8] INFO  carbon [(null)] <(null)> - Scheduler stopped.
+2010-08-26 08:28:32,520 [8] INFO  carbon [(null)] <(null)> - Context stopped.

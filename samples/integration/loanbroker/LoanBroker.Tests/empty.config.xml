@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  
+<!-- configuration file needed to initialize the integration infrastructure for testing -->
+<facilities>
+
+  <facility id="carbon.integration">
+    <!-- log all channel messages -->
+    <log channel="*" />
+  </facility>
+
+</facilities>
+  
+</configuration>

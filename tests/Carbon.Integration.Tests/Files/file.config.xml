@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  
+  <facilities>
+
+    <facility id="carbon.integration">
+      <log channel="*" />
+    </facility>
+    
+  </facilities>
+
+  <components>
+    <component id="fileMoverSurface"
+               type="Carbon.Integration.Tests.Files.TestFileMoverSurface, Carbon.Integration.Tests">
+      <parameters>
+        <SourceDirectory>c:\trash\incoming</SourceDirectory>
+        <TargetDirectory>c:\trash\outgoing</TargetDirectory>
+        <ErrorDirectory>c:\trash\errors</ErrorDirectory>
+      </parameters>
+    </component>
+  </components>
+
+</configuration>

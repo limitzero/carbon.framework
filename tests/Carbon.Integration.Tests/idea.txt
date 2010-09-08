@@ -1,0 +1,91 @@
+﻿The idea for the integration part of the Carbon project is to have something along the lines of an 
+integration surface that allows for messages coming in from various points,  business logic processing 
+of the message, and optionally sending the message onto another location.
+
+Ex:
+<----------------------------------------------------------------- Surface ----------------------------------------------------------------->
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|																					|																																												  |																				|                                      
+|																					|																																												  |																				|  
+|																					|																																												  |																				|  
+|																					|																																												  |																				|  
+|																					|																																												  |																				|  
+|		Input Ports										|                         Business Components                            |         Output Ports         |
+|																					|																																												  |																				|  
+|																					|																																												  |																				|  
+|																					|																																												  |																				|  
+|																					|																																												  |																				|  
+|																					|																																												  |																				|  
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|																																					Error Port 																																									  |
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+The flow of the design surface is always left to right in terms of physical message processing with an 
+option to forward the message to output port. This is similiar in design of the BizTalk design surface 
+in that the separation is logical in terms of where the message originates, who processes it, and where 
+it is deemed to go after everthing has been completed for the message. 
+
+A series of business components can be combined together to orchestrate the process with the caveat that 
+the process is not long-lived. In other words, the process may take a long time, but it is not recoverable in the 
+case of long-running message coordination or if the system itself has a failure.
+
+
+Example of a simple integration orchestration:
+
+Geting a message from a file location, transforming it and sending the results to an email location:
+
+public class FileTransformationIntegrationSurface : AbstractIntegrationSurface
+{
+			public void BuildReceivePorts()
+			{
+						CreateReceivePort(
+										new InputPort().CreatePort("file.in",@"file://c:/trash/incoming");
+								);
+			}
+			
+			public void BuildSendPorts()
+			{	
+						CreateSendPort(
+								new OutputPort().CreatePort("email.out",
+								"smtp:username@password//121.0.0.1/me@gmail.com/?subject=test");
+								)
+			}
+			
+			public override BuildCollaborations
+			(
+						// grab the file message and send the results to an email address:
+						AddComponent<FileToEmailTransformer>("file.in","email.out");
+			)
+}
+
+public class FileToEmailTransformer
+{
+		public string Process(string message)
+		{
+				// parse the contents of the file message and create an email body 
+				// with the appropriate contents:
+				return string.Empty;
+		}
+}
+
+To run the integration scenario, we can use something like this:
+
+ container = new WindsorContainer(new XmlInterpreter());
+ container.Kernel.AddFacility(CarbonIntegrationFacility.FACILITY_ID, new CarbonIntegrationFacility());
+ 
+ // at this point, all of the integration scenarios will be scanned and loaded into the container 
+ // for reference:
+ 
+ var context = container.Resolve<IIntegrationContext>();  // our context for running the scenario
+ context.LoadSurface<FileTransformationIntegrationSurface>();  // choose the application surface to run
+ context.Start();
+ 
+ // send a message to the "file.in" location to trigger the process:
+ context.Send("file.in", new Envelope("This is a test message");
+ 
+ context.Stop();
+ 
+ This assumes the following:
+ 1. One surface will be defined per assembly for hosting via an integration context
+ 2. Multiple hosting of an integration surface is not usually done
+ 

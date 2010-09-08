@@ -1,0 +1,23 @@
+﻿<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Carbon.Core"
+                   namespace="Carbon.Core.Subscription"
+                   default-lazy="false">
+
+  <!-- entity: Subscription -->
+  <class name="Subscription" table="Subscriptions">
+
+    <id name="Id" column="subscriptionId" type="System.Guid">
+      <generator class="assigned" />
+    </id>
+
+    <!-- properties for entity 'Subscription' -->
+    <property name="Channel" column="channel" type="String" length="150" />
+    <property name="MessageType" column="messageType" type="String" length="300"  />
+    <property name="ConcreteMessageType" column="concreteMessageType" type="String" length="300"  />
+    <property name="MethodName" column="methodName" type="String" length="300"  />
+    <property name="Component" column="component" type="String" length="300"  />
+    <property name="UriLocation" column="uriLocation" type="String" length="800"  />
+    
+  </class>
+
+</hibernate-mapping>

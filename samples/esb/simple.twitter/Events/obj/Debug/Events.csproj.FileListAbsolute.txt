@@ -1,0 +1,16 @@
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Events.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Events.pdb
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Carbon.Core.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Carbon.ESB.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Castle.Windsor.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Carbon.Windsor.Container.Integration.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Castle.Core.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\log4net.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Castle.DynamicProxy2.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Castle.MicroKernel.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Carbon.ESB.pdb
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Carbon.Windsor.Container.Integration.pdb
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\bin\Debug\Carbon.Core.pdb
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\obj\Debug\Events.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\Events\obj\Debug\Events.pdb

@@ -1,0 +1,1 @@
+C:\Work\repositories\Carbon.Framework\samples\integration\SimpleCQRS\obj\Debug\ResolveAssemblyReference.cache

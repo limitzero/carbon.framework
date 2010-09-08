@@ -1,0 +1,5 @@
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\DependencyResolution\bin\Debug\DependencyResolution.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\DependencyResolution\bin\Debug\DependencyResolution.pdb
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\DependencyResolution\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\DependencyResolution\obj\Debug\DependencyResolution.dll
+C:\Work\repositories\Carbon.Framework\samples\esb\simple.twitter\DependencyResolution\obj\Debug\DependencyResolution.pdb

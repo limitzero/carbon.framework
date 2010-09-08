@@ -1,0 +1,233 @@
+2010-09-02 14:11:48,933 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:11:49,074 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:11:49,621 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:11:49,636 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:11:49,636 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:11:49,636 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:11:49,652 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:11:49,652 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:11:49,699 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Commands.PostNewTweetCommand'
+2010-09-02 14:11:50,042 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Commands.PostNewTweetCommand'
+2010-09-02 14:11:50,886 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:11:50,886 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:11:50,902 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:11:50,902 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:11:50,917 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:11:50,917 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:12:06,105 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:12:06,199 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:12:06,574 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:12:06,574 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:12:06,589 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:12:06,589 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:12:06,589 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:12:06,605 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:12:06,636 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Commands.PostNewTweetCommand'
+2010-09-02 14:12:06,980 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Commands.PostNewTweetCommand'
+2010-09-02 14:12:07,839 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:12:07,855 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:12:07,855 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:12:07,855 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:12:07,870 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:12:07,870 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:13:23,354 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:13:23,463 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:13:24,041 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:13:24,057 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:13:24,057 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:13:24,073 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:13:24,073 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:13:24,073 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:13:24,119 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Commands.PostNewTweetCommand'
+2010-09-02 14:13:24,479 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Commands.PostNewTweetCommand'
+2010-09-02 14:13:25,323 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:13:25,323 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:13:25,338 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:13:25,338 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:13:25,354 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:13:25,354 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:17:56,353 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:17:56,478 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:17:56,931 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:17:56,931 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:17:56,946 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:17:56,962 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:17:56,962 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:17:56,962 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:17:57,009 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Commands.PostNewTweetCommand'
+2010-09-02 14:17:58,524 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Commands.PostNewTweetCommand'
+2010-09-02 14:17:58,649 [Worker.10] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'CommandConsumers.PostNewTweetCommandConsumer' for method 'Consume' with input message 'Commands.PostNewTweetCommand'.
+2010-09-02 14:17:58,665 [Worker.10] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:17:58,681 [Worker.10] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:17:58,696 [Worker.10] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'CommandConsumers.PostNewTweetCommandConsumer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:17:58,712 [Worker.11] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:17:58,712 [Worker.11] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:17:58,962 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:17:58,962 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:17:58,978 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:17:58,978 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:17:58,993 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:17:58,993 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:32:47,837 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:32:47,947 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:32:48,728 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:32:48,775 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:32:48,775 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:32:48,791 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:32:48,791 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:32:48,791 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:32:48,853 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:32:50,213 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:32:50,400 [Worker.16] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:32:50,416 [Worker.16] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:32:51,088 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:32:51,088 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:32:51,104 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:32:51,119 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:32:56,120 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:32:56,136 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:36:25,608 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:36:25,718 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:36:26,233 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:36:26,249 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:36:26,249 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:36:26,265 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:36:26,265 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:36:26,265 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:36:26,327 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:36:26,624 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:36:26,796 [Worker.11] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:36:26,812 [Worker.11] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:36:27,437 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:36:27,452 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:36:27,452 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:36:27,468 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:36:32,484 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:36:32,484 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:40:38,017 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:40:38,126 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:40:38,626 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:40:38,642 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:40:38,673 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:40:38,689 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:40:38,689 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:40:38,689 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:40:38,735 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:40:40,329 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:40:40,376 [Worker.11] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:40:40,392 [Worker.11] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:40:41,532 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:40:41,532 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:40:41,532 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:40:41,548 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:40:41,548 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:40:41,564 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:45:35,469 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:45:35,579 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:45:44,767 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:45:44,767 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:45:44,767 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:45:44,782 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:45:44,782 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:45:44,798 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:45:44,845 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:45:45,188 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:45:46,001 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:45:46,017 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:45:46,017 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:45:46,032 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:45:51,048 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:45:51,048 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:46:30,644 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:46:30,816 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:46:33,050 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:46:33,066 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:46:33,081 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:46:33,128 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:46:33,128 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:46:33,128 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:46:33,191 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:46:34,659 [Worker.11] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:46:34,675 [Worker.11] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:46:34,863 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:47:25,443 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:47:25,459 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:47:25,459 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:47:25,459 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:47:25,474 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:47:25,474 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:48:20,867 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:48:20,961 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:48:23,180 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:48:23,180 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:48:23,196 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:48:23,196 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:48:23,211 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:48:23,211 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:48:23,258 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:48:23,571 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:49:59,184 [Worker.9] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:50:11,919 [Worker.9] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:50:12,216 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:50:12,216 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:50:12,232 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:50:12,232 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:50:12,247 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:50:12,247 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:50:26,076 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:50:26,185 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:50:28,498 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:50:28,514 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:50:28,514 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:50:28,529 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:50:28,529 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:50:28,545 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:50:28,592 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:50:28,889 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:50:33,170 [Worker.21] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:50:42,483 [Worker.21] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:50:42,639 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:50:42,639 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:50:42,655 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:50:42,655 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:50:42,670 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:50:42,670 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:52:40,706 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:52:40,816 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:52:42,987 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:52:43,003 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:52:43,003 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:52:43,019 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:52:43,019 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:52:43,034 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:52:43,081 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:52:43,394 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:52:43,566 [Worker.10] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:52:45,925 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:52:45,941 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:52:45,956 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:52:45,956 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 14:52:50,972 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:52:50,972 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:53:47,115 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 14:53:47,224 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 14:53:52,537 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' started.
+2010-09-02 14:53:52,553 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' started.
+2010-09-02 14:53:52,553 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' started.
+2010-09-02 14:53:52,568 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:53:52,568 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Timeout service started.
+2010-09-02 14:53:52,584 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Message bus started
+2010-09-02 14:53:52,631 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 14:53:53,115 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'
+2010-09-02 14:53:53,271 [Worker.8] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with input message 'Events.TweetPostedEvent'.
+2010-09-02 14:53:53,287 [Worker.8] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Denormalizers.TweetPostedEventDenormalizer' for method 'Consume' with output message '<Null>'.
+2010-09-02 14:53:58,678 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'kharbon-bus' on uri 'msmq://localhost/private$/carbon_bus' stopped.
+2010-09-02 14:53:58,693 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'post_new_tweet_command' on uri 'msmq://localhost/private$/cqrs.commands' stopped.
+2010-09-02 14:53:58,693 [2] INFO  carbon [(null)] <(null)> - Input adapter for channel 'new_tweet_posted_event_denormalizer' on uri 'msmq://localhost/private$/cqrs.events' stopped.
+2010-09-02 14:53:58,693 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:53:58,709 [2] INFO  carbon [(null)] <(null)> - Timeout service stopped.
+2010-09-02 14:53:58,709 [2] INFO  carbon [(null)] <(null)> - Message bus stopped.
+2010-09-02 15:50:32,640 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'vm' with addressing uri 'vm://{channel name}'.
+2010-09-02 15:50:32,765 [TestRunnerThread] INFO  carbon [(null)] <(null)> - Adapter configuration registered for scheme 'msmq' with addressing uri 'msmq://{server name}/private$/{queue name}'.
+2010-09-02 15:50:33,859 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message received by the  bus: 'Events.TweetPostedEvent'
+2010-09-02 15:50:35,250 [TestRunnerThread] DEBUG carbon [(null)] <(null)> - Message delivered via bus: 'Events.TweetPostedEvent'

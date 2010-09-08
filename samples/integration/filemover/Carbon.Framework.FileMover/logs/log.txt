@@ -1,0 +1,40 @@
+2010-08-20 14:51:34,343 [9] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.BytesToStringPipelineComponent' loaded.
+2010-08-20 14:51:34,453 [9] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.SerializeMessagePipelineComponent' loaded.
+2010-08-20 14:51:34,468 [9] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.NonIdempotentPipelineComponent' loaded.
+2010-08-20 14:51:34,468 [9] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.DeserializeMessagePipelineComponent' loaded.
+2010-08-20 14:51:34,484 [9] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.StringToBytesPipelineComponent' loaded.
+2010-08-20 14:51:34,484 [9] DEBUG carbon [(null)] <(null)> - Pipeline component 'Carbon.Core.Pipeline.Component.FlowThroughPipelineComponent' loaded.
+2010-08-20 14:51:34,515 [9] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Receive.DeserializeMessagePipeline' loaded.
+2010-08-20 14:51:34,515 [9] DEBUG carbon [(null)] <(null)> - On-demand pipeline configuration 'Carbon.Core.Pipeline.Send.SerializeMessagePipeline' loaded.
+2010-08-20 14:51:45,234 [9] DEBUG carbon [(null)] <(null)> - Surface 'Five Mover Component Surface' loaded.
+2010-08-20 14:51:45,234 [9] INFO  carbon [(null)] <(null)> - Context started.
+2010-08-20 14:51:45,296 [9] INFO  carbon [(null)] <(null)> - Input adapter for channel 'in' on uri 'file://c:\trash\incoming' started.
+2010-08-20 14:51:45,375 [9] INFO  carbon [(null)] <(null)> - Output adapter for channel 'out' on uri 'file://c:\trash\outgoing' started.
+2010-08-20 14:51:45,390 [9] INFO  carbon [(null)] <(null)> - Scheduler started.
+2010-08-20 14:51:46,406 [Worker.10] DEBUG carbon [(null)] <(null)> - Receive pipeline 'File Receive Pipeline' for channel 'in' on uri 'file://c:\trash\incoming' started.
+2010-08-20 14:51:46,406 [Worker.10] DEBUG carbon [(null)] <(null)> - Receive pipeline 'File Receive Pipeline' component 'Bytes 2 String Pipeline Component' invoked for channel 'in' on uri 'file://c:\trash\incoming' with message 'System.String'.
+2010-08-20 14:51:46,421 [Worker.10] DEBUG carbon [(null)] <(null)> - Receive pipeline 'File Receive Pipeline' for channel 'in' on uri 'file://c:\trash\incoming' completed.
+2010-08-20 14:51:46,437 [Worker.10] DEBUG carbon [(null)] <(null)> - Message 'System.String' received from target 'file://c:\trash\incoming' via channel 'in'.
+2010-08-20 14:51:46,437 [Worker.10] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Carbon.Core.Components.PassThroughComponentFor`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]' for method 'PassThrough' with input message 'System.String'.
+2010-08-20 14:51:46,453 [Worker.10] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Carbon.Core.Components.PassThroughComponentFor`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]' for method 'PassThrough' with output message 'System.String'.
+2010-08-20 14:51:47,390 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' for channel 'out' on uri 'file://c:\trash\outgoing' started.
+2010-08-20 14:51:47,406 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' component 'String 2 Bytes' invoked for channel 'out' on uri 'file://c:\trash\outgoing' with message 'System.Byte[]'.
+2010-08-20 14:51:47,406 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' for channel 'out' on uri 'file://c:\trash\outgoing' completed.
+2010-08-20 14:51:47,421 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' for channel 'out' on uri 'file://c:\trash\outgoing' started.
+2010-08-20 14:51:47,437 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' for channel 'out' on uri 'file://c:\trash\outgoing' encountered an error for component 'String 2 Bytes'. Pushing to location: '{Not Specifed}'
+2010-08-20 14:51:47,453 [Worker.11] DEBUG carbon [(null)] <(null)> - Message 'System.Byte[]' delivered to target 'file://c:\trash\outgoing' via channel 'out'.
+2010-08-20 14:52:32,515 [Worker.10] DEBUG carbon [(null)] <(null)> - Receive pipeline 'File Receive Pipeline' for channel 'in' on uri 'file://c:\trash\incoming' started.
+2010-08-20 14:52:32,531 [Worker.10] DEBUG carbon [(null)] <(null)> - Receive pipeline 'File Receive Pipeline' component 'Bytes 2 String Pipeline Component' invoked for channel 'in' on uri 'file://c:\trash\incoming' with message 'System.String'.
+2010-08-20 14:52:32,531 [Worker.10] DEBUG carbon [(null)] <(null)> - Receive pipeline 'File Receive Pipeline' for channel 'in' on uri 'file://c:\trash\incoming' completed.
+2010-08-20 14:52:32,546 [Worker.10] DEBUG carbon [(null)] <(null)> - Message 'System.String' received from target 'file://c:\trash\incoming' via channel 'in'.
+2010-08-20 14:52:32,546 [Worker.10] DEBUG carbon [(null)] <(null)> - Begin Invoke: Component 'Carbon.Core.Components.PassThroughComponentFor`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]' for method 'PassThrough' with input message 'System.String'.
+2010-08-20 14:52:32,562 [Worker.10] DEBUG carbon [(null)] <(null)> - End Invoke: Component 'Carbon.Core.Components.PassThroughComponentFor`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]' for method 'PassThrough' with output message 'System.String'.
+2010-08-20 14:52:33,515 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' for channel 'out' on uri 'file://c:\trash\outgoing' started.
+2010-08-20 14:52:33,515 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' component 'String 2 Bytes' invoked for channel 'out' on uri 'file://c:\trash\outgoing' with message 'System.Byte[]'.
+2010-08-20 14:52:33,531 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' for channel 'out' on uri 'file://c:\trash\outgoing' completed.
+2010-08-20 14:52:33,531 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' for channel 'out' on uri 'file://c:\trash\outgoing' started.
+2010-08-20 14:52:33,562 [Worker.11] DEBUG carbon [(null)] <(null)> - Send pipeline 'File Send Pipeline' for channel 'out' on uri 'file://c:\trash\outgoing' encountered an error for component 'String 2 Bytes'. Pushing to location: '{Not Specifed}'
+2010-08-20 14:52:33,562 [Worker.11] DEBUG carbon [(null)] <(null)> - Message 'System.Byte[]' delivered to target 'file://c:\trash\outgoing' via channel 'out'.
+2010-08-20 14:52:37,031 [9] INFO  carbon [(null)] <(null)> - Scheduler stopped.
+2010-08-20 14:52:37,046 [9] INFO  carbon [(null)] <(null)> - Input adapter for channel 'in' on uri 'file://c:\trash\incoming' stopped.
+2010-08-20 14:52:37,062 [9] INFO  carbon [(null)] <(null)> - Context stopped.

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+  <properties>
+    <bank1.channel>community.bank</bank1.channel>
+    <bank2.channel>greater.trust.bank</bank2.channel>
+    <bank3.channel>pawn.shop</bank3.channel>
+    <bank4.channel>ivory.tower.bank</bank4.channel>
+  </properties>
+  
+  <!-- configuration file needed to initialize the integration infrastructure for testing -->
+  <facilities>
+
+    <facility id="carbon.integration">
+      <!-- log all channel messages -->
+      <log channel="*" />
+    </facility>
+
+  </facilities>
+
+  <components>
+
+    <component id="bank.connection.manager"
+                type="LoanBroker.Surfaces.BankingGateway.Components.BankConnectionManager, LoanBroker">
+      <parameters>
+        <BankQuoteReplyAddress>bank.quote.replies</BankQuoteReplyAddress>
+        <BankingPartners>
+          <array>
+            <item>#{bank1.channel}</item>
+            <item>#{bank2.channel}</item>
+            <item>#{bank3.channel}</item>
+            <item>#{bank4.channel}</item>
+          </array>
+        </BankingPartners>
+      </parameters>
+    </component>
+
+    <component id="community.bank"
+               type="LoanBroker.Banks.Bank1, LoanBroker">
+      <parameters>
+        <InputChannel>#{bank1.channel}</InputChannel>
+      </parameters>
+    </component>
+
+    <component id="greater.trust.bank"
+           type="LoanBroker.Banks.Bank2, LoanBroker">
+      <parameters>
+        <InputChannel>#{bank2.channel}</InputChannel>
+      </parameters>
+    </component>
+
+    <component id="pawn.shop"
+       type="LoanBroker.Banks.Bank3, LoanBroker">
+      <parameters>
+        <InputChannel>#{bank3.channel}</InputChannel>
+      </parameters>
+    </component>
+
+    <component id="ivory.tower.bank"
+        type="LoanBroker.Banks.Bank4, LoanBroker">
+      <parameters>
+        <InputChannel>#{bank4.channel}</InputChannel>
+      </parameters>
+    </component>
+    
+  </components>
+
+</configuration>

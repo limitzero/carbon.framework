@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  
+  <facilities>
+
+    <facility id="carbon.integration">
+      <log channel="*" />
+    </facility>
+    
+  </facilities>
+
+  <components>
+    <component id="ms_access_data_context"
+               type="Carbon.Integration.Tests.Sql.MSAccessDataContextProvider, Carbon.Integration.Tests">
+      <parameters>
+        <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;OLE DB Services=-4;Data Source=C:\Work\repositories\Carbon.Framework\tests\Carbon.Integration.Tests\Sql\carbon.mdb;Persist Security Info=False;</ConnectionString>
+        <QueryText>select employee.* from employee</QueryText>
+      </parameters>
+    </component>
+  </components>
+
+</configuration>

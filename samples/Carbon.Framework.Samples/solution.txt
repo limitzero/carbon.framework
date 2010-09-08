@@ -1,0 +1,8 @@
+For the loan broker example, the components can be intially de-composed into the following:
+
+- A component to consume the messages, as it relates to loan quote requests, from the loan quote client (LoanQuoteMessageConsumer)
+- A component to consume the messages, as it relates to getting a credit score for the loan information (CreditBureauMessageConsumer)
+- A component to consume credit and loan information and make subsequent reply as to whether the loan can be granted (BankQuoteMessageConsumer)
+- A component to take the bank quote replies and determine the best quote for the customer (BankQuoteAggregator)
+- A component to consume the best bank quote and translate this to a loan quote reply for the client (BankQuoteToLoanReplyMessageTranslator)
+

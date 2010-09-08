@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDD71A59-4A78-4B1C-9A77-3AC9D843F378}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Carbon.Core</RootNamespace>
+    <AssemblyName>Carbon.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=1.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\AbstractInputChannelAdapter.cs" />
+    <Compile Include="Adapter\AbstractOutputChannelAdapter.cs" />
+    <Compile Include="Adapter\ChannelAdapterErrorEventArgs.cs" />
+    <Compile Include="Adapter\ChannelAdapterMessageDeliveredEventArgs.cs" />
+    <Compile Include="Adapter\ChannelAdapterMessageReceivedEventArgs.cs" />
+    <Compile Include="Adapter\ChannelAdapterStartedEventArgs.cs" />
+    <Compile Include="Adapter\ChannelAdapterStoppedEventArgs.cs" />
+    <Compile Include="Adapter\Factory\AdapterFactory.cs" />
+    <Compile Include="Adapter\Factory\IAdapterFactory.cs" />
+    <Compile Include="Adapter\IAdapter.cs" />
+    <Compile Include="Adapter\IInputChannelAdapter.cs" />
+    <Compile Include="Adapter\Impl\Log\LogOutputAdapter.cs" />
+    <Compile Include="Adapter\Impl\Log\Registration\LogAdapterConfiguration.cs" />
+    <Compile Include="Adapter\Impl\Log\Registration\LogAdapterRegistrationStrategy.cs" />
+    <Compile Include="Adapter\Impl\Null\NullInputChannelAdapter.cs" />
+    <Compile Include="Adapter\Impl\Null\NullOutputChannelAdapter.cs" />
+    <Compile Include="Adapter\Impl\Queue\QueueChannelAdapterUtils.cs" />
+    <Compile Include="Adapter\Impl\Queue\QueueChannelInputAdapter.cs" />
+    <Compile Include="Adapter\Impl\Queue\QueueChannelOutputAdapter.cs" />
+    <Compile Include="Adapter\Impl\Queue\Registration\QueueChannelAdapterConfiguration.cs" />
+    <Compile Include="Adapter\Impl\Queue\Registration\QueueChannelAdapterRegistrationStrategy.cs" />
+    <Compile Include="Adapter\IOutputChannelAdapter.cs" />
+    <Compile Include="Adapter\Registry\AdapterRegistry.cs" />
+    <Compile Include="Adapter\Registry\IAdapterConfiguration.cs" />
+    <Compile Include="Adapter\Registry\IAdapterRegistrationStrategy.cs" />
+    <Compile Include="Adapter\Registry\IAdapterRegistry.cs" />
+    <Compile Include="Adapter\Strategies\Polling\IPollingStrategy.cs" />
+    <Compile Include="Adapter\Strategies\Polling\PollingStrategy.cs" />
+    <Compile Include="Adapter\Strategies\Retry\RetryStrategy.cs" />
+    <Compile Include="Adapter\Strategies\Retry\IRetryStrategy.cs" />
+    <Compile Include="Adapter\Strategies\Scheduling\ISchedulingStrategy.cs" />
+    <Compile Include="Adapter\Strategies\Scheduling\SchedulingStrategy.cs" />
+    <Compile Include="Adapter\Template\AdapterMessagingTemplate.cs" />
+    <Compile Include="Adapter\Template\IAdapterMessagingTemplate.cs" />
+    <Compile Include="Builder\IObjectContainer.cs" />
+    <Compile Include="Channel\AbstractChannel.cs" />
+    <Compile Include="Channel\ChannelErrorEncounteredEventArgs.cs" />
+    <Compile Include="Channel\ChannelMessageReceivedEventArgs.cs" />
+    <Compile Include="Channel\ChannelMessageSentEventArgs.cs" />
+    <Compile Include="Channel\Impl\Null\NullChannel.cs" />
+    <Compile Include="Channel\Impl\Queue\QueueChannel.cs" />
+    <Compile Include="Channel\Impl\Queue\QueueChannelStorageLocation.cs" />
+    <Compile Include="Channel\Impl\Queue\QueueChannelStorageRepository.cs" />
+    <Compile Include="Channel\Registry\ChannelRegistry.cs" />
+    <Compile Include="Channel\Registry\IChannelRegistry.cs" />
+    <Compile Include="Channel\Template\ChannelMessagingTemplate.cs" />
+    <Compile Include="Channel\Template\IChannelMessagingTemplate.cs" />
+    <Compile Include="Components\PassThroughComponentFor.cs" />
+    <Compile Include="Configuration\AbstractElementBuilder.cs" />
+    <Compile Include="Configuration\AbstractOnDemandComponentRegistration.cs" />
+    <Compile Include="Configuration\AbstractSubElementBuilder.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Endpoint\IMessageConsumingEndpoint.cs" />
+    <Compile Include="Envelope.cs" />
+    <Compile Include="EnvelopeBody.cs" />
+    <Compile Include="EnvelopeHeader.cs" />
+    <Compile Include="EnvelopeHeaderItem.cs" />
+    <Compile Include="Exceptions\AdapterNonDeliveredMessageException.cs" />
+    <Compile Include="Exceptions\MessageBusConfigurationException.cs" />
+    <Compile Include="Exceptions\ReceiveTimeoutPeriodExeceededException.cs" />
+    <Compile Include="ICanConsume.cs" />
+    <Compile Include="ICanConsumeAndReturn.cs" />
+    <Compile Include="IEnvelope.cs" />
+    <Compile Include="IEnvelopeBody.cs" />
+    <Compile Include="IEnvelopeHeader.cs" />
+    <Compile Include="IEnvelopeHeaderItem.cs" />
+    <Compile Include="Internals\Binding\IBinding.cs" />
+    <Compile Include="Internals\Dispatcher\IMessageDispatcher.cs" />
+    <Compile Include="Internals\Dispatcher\MessageDispatcher.cs" />
+    <Compile Include="Internals\MessageResolution\IMapMessageToMethod.cs" />
+    <Compile Include="Internals\MessageResolution\IMappedMessageToMethodInvoker.cs" />
+    <Compile Include="Internals\MessageResolution\MapMessageToMethod.cs" />
+    <Compile Include="Internals\MessageResolution\MappedMessageToMethodInvoker.cs" />
+    <Compile Include="Internals\Reflection\DefaultReflection.cs" />
+    <Compile Include="Internals\Reflection\IReflection.cs" />
+    <Compile Include="Internals\Serialization\DataContractSerializationProvider.cs" />
+    <Compile Include="Internals\Serialization\ISerializationProvider.cs" />
+    <Compile Include="Internals\Serialization\XmlSerializationProvider.cs" />
+    <Compile Include="Internals\Threading\Threading.cs" />
+    <Compile Include="Internals\Threading\ThreadPool.cs" />
+    <Compile Include="Internals\TransactionContext.cs" />
+    <Compile Include="NullEnvelopeHeaderItem.cs" />
+    <Compile Include="Pipeline\Component\AbstractPipelineComponent.cs" />
+    <Compile Include="Pipeline\Component\BytesToStringPipelineComponent.cs" />
+    <Compile Include="Pipeline\Component\DeserializeMessageComponent.cs" />
+    <Compile Include="Pipeline\Component\FlowThroughPipelineComponent.cs" />
+    <Compile Include="Pipeline\Component\IPipelineComponent.cs" />
+    <Compile Include="Pipeline\Component\NonIdempotentPipelineComponent.cs" />
+    <Compile Include="Pipeline\Component\PipelineComponentCompletedEventArgs.cs" />
+    <Compile Include="Pipeline\Component\PipelineComponentErrorEventArgs.cs" />
+    <Compile Include="Pipeline\Component\PipelineComponentStartedEventArgs.cs" />
+    <Compile Include="Pipeline\Component\SerializeMessagePipelineComponent.cs" />
+    <Compile Include="Pipeline\Component\StringToBytesPipelineComponent.cs" />
+    <Compile Include="Pipeline\IPipeline.cs" />
+    <Compile Include="Pipeline\Receive\AbstractReceivePipeline.cs" />
+    <Compile Include="Pipeline\Receive\DeserializeMessagePipeline.cs" />
+    <Compile Include="Pipeline\Receive\Exceptions\ReceivePipelineException.cs" />
+    <Compile Include="Pipeline\IOnDemandPipelineConfiguration.cs" />
+    <Compile Include="Pipeline\Receive\IReceivePipeline.cs" />
+    <Compile Include="Pipeline\Receive\ReceivePipeline.cs" />
+    <Compile Include="Pipeline\Receive\ReceivePipelineCompletedEventArgs.cs" />
+    <Compile Include="Pipeline\Receive\ReceivePipelineComponentInvokedEventArgs.cs" />
+    <Compile Include="Pipeline\Receive\ReceivePipelineErrorEventArgs.cs" />
+    <Compile Include="Pipeline\Receive\ReceivePipelineStartedEventArgs.cs" />
+    <Compile Include="Pipeline\Send\SendPipelineComponentInvokedEventArgs.cs" />
+    <Compile Include="Pipeline\Send\SerializeMessagePipeline.cs" />
+    <Compile Include="Pipeline\Send\AbstractSendPipeline.cs" />
+    <Compile Include="Pipeline\Send\Exceptions\SendPipelineException.cs" />
+    <Compile Include="Pipeline\Send\ISendPipeline.cs" />
+    <Compile Include="Pipeline\Send\SendPipeline.cs" />
+    <Compile Include="Pipeline\Send\SendPipelineCompletedEventArgs.cs" />
+    <Compile Include="Pipeline\Send\SendPipelineErrorEventArgs.cs" />
+    <Compile Include="Pipeline\Send\SendPipelineStartedEventArgs.cs" />
+    <Compile Include="Registries\For\MessageEndpoints\IMessageEndpointRegistry.cs" />
+    <Compile Include="Registries\For\MessageEndpoints\MessageEndpointRegistry.cs" />
+    <Compile Include="Registries\For\ServiceEndpoints\IServiceEndpointRegistry.cs" />
+    <Compile Include="Registries\For\ServiceEndpoints\ServiceEndpointRegistry.cs" />
+    <Compile Include="Registries\IRegistry.cs" />
+    <Compile Include="RuntimeServices\AbstractBackgroundService.cs" />
+    <Compile Include="RuntimeServices\BackGroundServiceErrorEventArgs.cs" />
+    <Compile Include="RuntimeServices\BackGroundServiceEventArgs.cs" />
+    <Compile Include="RuntimeServices\IBackgroundService.cs" />
+    <Compile Include="RuntimeServices\IStartable.cs" />
+    <Compile Include="NullEnvelope.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stereotypes\For\Components\MessageEndpoint\Configuration\MessageEndpointElementBuilder.cs" />
+    <Compile Include="Stereotypes\For\Components\MessageEndpoint\Impl\IMessageEndpointActivator.cs" />
+    <Compile Include="Stereotypes\For\Components\MessageEndpoint\Impl\MessageEndpointActivator.cs" />
+    <Compile Include="Stereotypes\For\Components\MessageEndpoint\Impl\MessageEndpointActivatorBeginInvokeEventArgs.cs" />
+    <Compile Include="Stereotypes\For\Components\MessageEndpoint\Impl\MessageEndpointEndInvokeEventArgs.cs" />
+    <Compile Include="Stereotypes\For\Components\MessageEndpoint\Impl\MessageEndpointErrorEventArgs.cs" />
+    <Compile Include="Stereotypes\For\Components\MessageEndpoint\MessageEndpointAttribute.cs" />
+    <Compile Include="Stereotypes\For\Components\Message\MessageAttribute.cs" />
+    <Compile Include="Stereotypes\For\Components\Service\Configuration\ServiceActivatorElementBuilder.cs" />
+    <Compile Include="Stereotypes\For\Components\Service\Impl\IServiceActivator.cs" />
+    <Compile Include="Stereotypes\For\Components\Service\Impl\ServiceActivator.cs" />
+    <Compile Include="Stereotypes\For\Components\Service\Impl\ServiceActivatorBeginInvokeEventArgs.cs" />
+    <Compile Include="Stereotypes\For\Components\Service\Impl\ServiceActivatorEndInvokeEventArgs.cs" />
+    <Compile Include="Stereotypes\For\Components\Service\Impl\ServiceActivatorErrorEventArgs.cs" />
+    <Compile Include="Stereotypes\For\Components\Service\ServiceAttribute.cs" />
+    <Compile Include="Stereotypes\For\MessageHandling\IMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\For\MessageHandling\IMessageHandlingStrategyAttribute.cs" />
+    <Compile Include="Stereotypes\For\MessageHandling\MatchAllAttribute.cs" />
+    <Compile Include="Stereotypes\For\MessageHandling\MessageHandlingStrategyCompleteEventArgs.cs" />
+    <Compile Include="Subscription\ISubscription.cs" />
+    <Compile Include="Subscription\ISubscriptionBuilder.cs" />
+    <Compile Include="Subscription\Subscription.cs" />
+    <Compile Include="Subscription\SubscriptionBuilder.cs" />
+    <Compile Include="Templates\Messaging\IMessagingTemplate.cs" />
+    <Compile Include="Tuples.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

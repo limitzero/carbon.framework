@@ -1,0 +1,1 @@
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\src\Carbon.Framework.FileMover\bin\Debug\Carbon.Framework.FileMover.exe.config

@@ -1,0 +1,10 @@
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\bin\Debug\Carbon.Framework.LoanBroker.Messages.dll
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\bin\Debug\Carbon.Framework.LoanBroker.Messages.pdb
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\bin\Debug\Carbon.Core.dll
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\bin\Debug\log4net.dll
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\bin\Debug\Castle.Core.dll
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\bin\Debug\Castle.MicroKernel.dll
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\bin\Debug\Carbon.Core.pdb
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\obj\Debug\Carbon.Framework.LoanBroker.Messages.dll
+C:\Work\repositories\Carbon.Framework\samples\Carbon.Framework.Samples\loanbroker\Carbon.Framework.LoanBroker.Messages\obj\Debug\Carbon.Framework.LoanBroker.Messages.pdb

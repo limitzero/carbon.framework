@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "file.mover", "file.mover", "{7E0F0C10-7F3B-46F5-BDC0-3592ACEDDEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carbon.Framework.FileMover", "src\Carbon.Framework.FileMover\Carbon.Framework.FileMover.csproj", "{DA7BD6B2-E5E2-4351-A31E-6F7C51113D51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integration.samples", "integration.samples", "{20BC6734-464E-48F2-B867-C896D3871A89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA7BD6B2-E5E2-4351-A31E-6F7C51113D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7BD6B2-E5E2-4351-A31E-6F7C51113D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7BD6B2-E5E2-4351-A31E-6F7C51113D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7BD6B2-E5E2-4351-A31E-6F7C51113D51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA7BD6B2-E5E2-4351-A31E-6F7C51113D51} = {7E0F0C10-7F3B-46F5-BDC0-3592ACEDDEF3}
+		{7E0F0C10-7F3B-46F5-BDC0-3592ACEDDEF3} = {20BC6734-464E-48F2-B867-C896D3871A89}
+	EndGlobalSection
+EndGlobal

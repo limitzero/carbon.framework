@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E82B5A65-BC47-4167-9FE6-46D679B98BE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Carbon.Integration</RootNamespace>
+    <AssemblyName>Carbon.Integration</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=1.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationContext.cs" />
+    <Compile Include="ApplicationContextErrorEventArgs.cs" />
+    <Compile Include="ApplicationContextMessageDeliveredEventArgs.cs" />
+    <Compile Include="Configuration\CarbonIntegrationFacility.cs" />
+    <Compile Include="Configuration\Endpoint\EndpointElementBuilder.cs" />
+    <Compile Include="Configuration\LogChannel\LogChannelElementBuilder.cs" />
+    <Compile Include="Stereotypes\Accumulator\AccumulateAttribute.cs" />
+    <Compile Include="Stereotypes\Accumulator\Impl\DefaultAccumulatorMessageHandlingStrategy.cs" />
+    <Compile Include="Testing\BaseMessageConsumerTestFixture.cs" />
+    <Compile Include="Configuration\Surface\Collaborations\CollaborationDefinition.cs" />
+    <Compile Include="Configuration\Surface\Collaborations\CollaborationsElementBuilder.cs" />
+    <Compile Include="Configuration\Surface\DefaultSurface.cs" />
+    <Compile Include="Configuration\Surface\Pipeline\PipelineBuilder.cs" />
+    <Compile Include="Configuration\Surface\ReceivePort\ReceivePortElementBuilder.cs" />
+    <Compile Include="Configuration\Surface\SendPort\SendPortElementBuilder.cs" />
+    <Compile Include="Configuration\Surface\SurfaceElementBuilder.cs" />
+    <Compile Include="Dsl\IIntegrationSurfaceScanner.cs" />
+    <Compile Include="Dsl\IntegrationSurfaceScanner.cs" />
+    <Compile Include="Dsl\Surface\AbstractIntegrationComponentSurface.cs" />
+    <Compile Include="Dsl\Surface\IIntegrationComponentConfiguration.cs" />
+    <Compile Include="Dsl\Surface\IntegrationComponentConfiguration.cs" />
+    <Compile Include="Dsl\Surface\Ports\AbstractPort.cs" />
+    <Compile Include="Dsl\Surface\Ports\ErrorOutputPortConfiguration.cs" />
+    <Compile Include="Dsl\Surface\Ports\InputPort.cs" />
+    <Compile Include="Dsl\Surface\Ports\IPort.cs" />
+    <Compile Include="Dsl\Surface\Ports\IPortDefinition.cs" />
+    <Compile Include="Dsl\Surface\Ports\OutputPort.cs" />
+    <Compile Include="Dsl\Surface\Ports\OutputPortConfiguration.cs" />
+    <Compile Include="Dsl\Surface\Registry\ISurfaceRegistry.cs" />
+    <Compile Include="Dsl\Surface\Registry\SurfaceRegistry.cs" />
+    <Compile Include="IApplicationContext.cs" />
+    <Compile Include="IIntegrationContext.cs" />
+    <Compile Include="IntegrationContext.cs" />
+    <Compile Include="ApplicationContextMessageReceivedEventArgs.cs" />
+    <Compile Include="Pipeline\IIntegrationMessagingPipeline.cs" />
+    <Compile Include="Pipeline\IntegrationMessagingPipeline.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scheduler\IMethodInvokerScheduledTask.cs" />
+    <Compile Include="Scheduler\IScheduledItem.cs" />
+    <Compile Include="Scheduler\IScheduledTask.cs" />
+    <Compile Include="Scheduler\IScheduler.cs" />
+    <Compile Include="Scheduler\MethodInvokerScheduledTask.cs" />
+    <Compile Include="Scheduler\ScheduledItemCompletedEventArgs.cs" />
+    <Compile Include="Scheduler\ScheduledItemErrorEventArgs.cs" />
+    <Compile Include="Scheduler\ScheduledTaskErrorEventArgs.cs" />
+    <Compile Include="Scheduler\ScheduledTaskExecutedEventArgs.cs" />
+    <Compile Include="Scheduler\ScheduleItem.cs" />
+    <Compile Include="Scheduler\Scheduler.cs" />
+    <Compile Include="Scheduler\SchedulerItemCompletedEventArgs.cs" />
+    <Compile Include="Stereotypes\Accumulator\AccumulatorAttribute.cs" />
+    <Compile Include="Stereotypes\Accumulator\Impl\AccumulatorDelegates.cs" />
+    <Compile Include="Stereotypes\Accumulator\Impl\AbstractAccumulatorMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Accumulator\Impl\IAccumulatorMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Aggregator\AggregatorAttribute.cs" />
+    <Compile Include="Stereotypes\Aggregator\Impl\AbstractAggregatorMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Aggregator\Impl\AggregatorMessageHandlingDelegates.cs" />
+    <Compile Include="Stereotypes\Aggregator\Impl\IAggregatorMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Consumes\ConsumesAttribute.cs" />
+    <Compile Include="Stereotypes\Consumes\Impl\ConsumesMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Consumes\Impl\IConsumesMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Gateway\Configuration\GatewayElementBuilder.cs" />
+    <Compile Include="Stereotypes\Gateway\GatewayAttribute.cs" />
+    <Compile Include="Stereotypes\Gateway\Impl\GatewayDefinition.cs" />
+    <Compile Include="Stereotypes\Gateway\Impl\GatewayMessageForwarder.cs" />
+    <Compile Include="Stereotypes\Gateway\Impl\GatewayMethodInterceptor.cs" />
+    <Compile Include="Stereotypes\Gateway\Impl\GatewayProxyBuilder.cs" />
+    <Compile Include="Stereotypes\Gateway\Impl\IGatewayDefinition.cs" />
+    <Compile Include="Stereotypes\Gateway\Impl\IGatewayMessageForwarder.cs" />
+    <Compile Include="Stereotypes\Gateway\Impl\IGatewayProxyBuilder.cs" />
+    <Compile Include="Stereotypes\Polled\PollableAttribute.cs" />
+    <Compile Include="Stereotypes\Router\Impl\Configuration\DefaultContentBasedRouter.cs" />
+    <Compile Include="Stereotypes\Router\Impl\Configuration\IContentBasedRouter.cs" />
+    <Compile Include="Stereotypes\Router\Impl\Configuration\Rules\DefaultRoutingRuleBase.cs" />
+    <Compile Include="Stereotypes\Router\Impl\Configuration\Rules\IRoutingRule.cs" />
+    <Compile Include="Stereotypes\Router\Impl\Configuration\Rules\IRoutingRuleBase.cs" />
+    <Compile Include="Stereotypes\Router\Impl\DefaultRouterMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Router\Impl\IRouterMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Router\Impl\AbstractRouterMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Router\RouterAttribute.cs" />
+    <Compile Include="Stereotypes\Splitter\Impl\DefaultSplitterMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Splitter\Impl\ISplitterMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Splitter\Impl\AbstractSplitterMessageHandlingStrategy.cs" />
+    <Compile Include="Stereotypes\Splitter\SplitterAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Carbon.Core\Carbon.Core.csproj">
+      <Project>{BDD71A59-4A78-4B1C-9A77-3AC9D843F378}</Project>
+      <Name>Carbon.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Carbon.Windsor.Container.Integration\Carbon.Windsor.Container.Integration.csproj">
+      <Project>{213C5255-F7E8-4BB6-8900-3C86ACC010A9}</Project>
+      <Name>Carbon.Windsor.Container.Integration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="idea.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

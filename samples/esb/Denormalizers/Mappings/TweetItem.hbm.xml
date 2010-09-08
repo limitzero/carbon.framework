@@ -1,0 +1,13 @@
+﻿<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" 
+                   assembly="Denormalizers" 
+                   namespace="Denormalizers" default-lazy="false">
+	<!-- entity: TweetItem -->
+	<class name="TweetItem" table="Products">
+		<id name="Id" column="tweetId" type="Int32" access="nosetter.camelcase-underscore">
+			<generator class="identity"/>
+		</id>
+		<!-- properties for entity 'TweetItem' -->
+		<property name="Message" column="message" type="String" length="800" access="nosetter.lowercase-underscore"/>
+		<property name="Who" column="who" type="String" length="50" access="nosetter.lowercase-underscore"/>
+	</class>
+</hibernate-mapping>
